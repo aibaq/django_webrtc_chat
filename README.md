@@ -1,4 +1,4 @@
-Django WebRTC chat example
+Django WebRTC Video chat example
 ==============
 
 ## Tags
@@ -22,6 +22,21 @@ Some browsers require HTTPS to allow Camera access, thus self-signed certificate
 To obtain a new certificate, run:
 ```
 ./generate_cert.sh
+```
+
+## NAT
+When p2p connection cannot be established because of NAT, turn server is required. The following url-s provide a good example how to run a turn server
+[https://en.maateen.me/install-turn-server-in-ubuntu/]
+[https://github.com/coturn/coturn/wiki/CoturnConfig]
+```
+'iceServers': [
+  {'urls': 'stun:stun.stunprotocol.org:3478'},
+  {
+    'urls': `turn:turn_server_host`,
+    'username': 'turn_server_username',
+    'credential': 'turn_server_password'
+  }
+]
 ```
 
 ## Original
