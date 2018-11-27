@@ -51,7 +51,6 @@ class BaseConfiguration(Configuration):
                     'django.template.context_processors.request',
                     'django.contrib.auth.context_processors.auth',
                     'django.contrib.messages.context_processors.messages',
-                    'django_webrtc_chat.core.context_processors.site_url',
                 ],
             },
         },

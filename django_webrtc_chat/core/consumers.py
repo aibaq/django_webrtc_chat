@@ -33,8 +33,6 @@ class SignalConsumer(AsyncJsonWebsocketConsumer):
         Called when we get a text frame. Channels will JSON-decode the payload
         for us and pass it as the first argument.
         """
-        # Messages will have a "command" key we can switch on
-        # command = content.get("command", None)
         await self.channel_layer.group_send(
             self.room_group_name,
             {
