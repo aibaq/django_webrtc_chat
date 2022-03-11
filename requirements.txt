@@ -43,7 +43,7 @@ monotonic==1.5
 msgpack==0.5.6
 olefile==0.46
 paramiko==2.4.2
-Pillow==5.3.0
+Pillow==9.0.1
 psycopg2==2.7.5
 pyasn1==0.4.4
 pycparser==2.19
